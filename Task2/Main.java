@@ -1,7 +1,7 @@
 package Task2;
 
-import org.junit.Assert;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.Assertions;
 
 import java.util.Arrays;
 
@@ -11,7 +11,7 @@ public class Main {
         int[] sourceArray = {2, 1, 8, 5};
         int[] sortedArray = {1, 2, 5, 8};
         quickSort(sourceArray, 0, sourceArray.length-1);
-        Assert.assertArrayEquals(sortedArray, sourceArray);
+        Assertions.assertArrayEquals(sortedArray, sourceArray);
     }
 
     @Test
@@ -19,7 +19,7 @@ public class Main {
         int[] sourceArray = {8, 1, 5, -5, 235, 47, -18, 46};
         int[] sortedArray = {-18, -5, 1, 5, 8, 46, 47, 235};
         quickSort(sourceArray, 0, sourceArray.length-1);
-        Assert.assertArrayEquals(sortedArray, sourceArray);
+        Assertions.assertArrayEquals(sortedArray, sourceArray);
     }
 
     @Test
@@ -27,7 +27,7 @@ public class Main {
         int[] sourceArray = {6, 6, 2, 8, 6};
         int[] sortedArray = {2, 6, 6, 6, 8};
         quickSort(sourceArray, 0, sourceArray.length-1);
-        Assert.assertArrayEquals(sortedArray, sourceArray);
+        Assertions.assertArrayEquals(sortedArray, sourceArray);
     }
 
     public static void quickSort(int[] a, int beginIndex, int endIndex){
